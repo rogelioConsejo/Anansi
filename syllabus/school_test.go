@@ -2,10 +2,6 @@ package syllabus
 
 import "testing"
 
-type School interface {
-	GetCourses() map[string]Course
-}
-
 func TestGetClasses(t *testing.T) {
 	var TestSchool School = GetTestSchool("test")
 	testCourses := TestSchool.GetCourses()
